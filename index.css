@@ -1,15 +1,23 @@
 .dark-blue {
-    color: #0000FF;
+  color: #0000FF;
 }
 
 .dark-green {
-    color: #008000;
+  color: #008000;
 }
 
 .yellow {
-    color: #FFFF00;
+  color: #FFFF00;
 }
 
 .light-blue {
-    color: #00FFFF;
+  color: #00FFFF;
 }
+
+.image:hover {
+  transform: scale(3);
+  rotate: 360deg;
+  transition: transform 3s ease, rotate 3s ease;
+}
+
+/*# sourceMappingURL=index.css.map */

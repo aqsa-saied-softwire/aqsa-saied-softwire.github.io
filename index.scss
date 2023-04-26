@@ -1,0 +1,26 @@
+$dark-blue: #0000FF;
+$dark-green: #008000;
+$yellow: #FFFF00;
+$light-blue: #00FFFF;
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+.dark-green {
+    color: $dark-green;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.light-blue {
+    color: $light-blue;
+}
+
+.image:hover {
+    transform: scale(3);
+    rotate: 360deg;
+    transition: transform 3s ease, rotate 3s ease;
+}
