@@ -3,32 +3,69 @@ $dark-green: #008000;
 $yellow: #FFFF00;
 $light-blue: #00FFFF;
 $purple: #800080;
+$red: #FF0000;
+$grey: #808080;
+$pink: #FFC0CB;
 $size-multiplier: 3;
 $transform-time: 3s;
 $full-rotation: 360deg;
 
 .dark-blue {
-    color: $dark-blue;
+  color: $dark-blue;
 }
 
 .dark-green {
-    color: $dark-green;
+  color: $dark-green;
 }
 
 .yellow {
-    color: $yellow;
+  color: $yellow;
 }
 
 .light-blue {
-    color: $light-blue;
+  color: $light-blue;
 }
 
 .purple {
-    color: $purple;
+  color: $purple;
+}
+
+.pink {
+  color: $pink;
+}
+
+.red {
+  color: $red;
+}
+
+.grey {
+  color: $grey;
 }
 
 .image:hover {
-    transform: scale($size-multiplier);
-    rotate: $full-rotation;
-    transition: transform $transform-time ease, rotate $transform-time ease;
+  transform: scale($size-multiplier);
+  rotate: $full-rotation;
+  transition: transform $transform-time ease, rotate $transform-time ease;
+}
+
+@keyframes shake-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-300px, -500px);
+  }
+  50% {
+    transform: translate(300px, -500px);
+  }
+  75% {
+    transform: translate(-300px, 300px);
+  }
+  100% {
+    transform: translate(500px, 300px);
+  }
+}
+/* Apply the animation to the text element */
+.goCrazy {
+  animation: shake-fly 1s ease-in-out infinite;
 }

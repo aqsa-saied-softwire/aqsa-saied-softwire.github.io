@@ -18,10 +18,44 @@
   color: #800080;
 }
 
+.pink {
+  color: #FFC0CB;
+}
+
+.red {
+  color: #FF0000;
+}
+
+.grey {
+  color: #808080;
+}
+
 .image:hover {
   transform: scale(3);
   rotate: 360deg;
   transition: transform 3s ease, rotate 3s ease;
+}
+
+@keyframes shake-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-300px, -500px);
+  }
+  50% {
+    transform: translate(300px, -500px);
+  }
+  75% {
+    transform: translate(-300px, 300px);
+  }
+  100% {
+    transform: translate(500px, 300px);
+  }
+}
+/* Apply the animation to the text element */
+.goCrazy {
+  animation: shake-fly 1s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=index.css.map */
