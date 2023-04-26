@@ -2,6 +2,10 @@ $dark-blue: #0000FF;
 $dark-green: #008000;
 $yellow: #FFFF00;
 $light-blue: #00FFFF;
+$purple: #800080;
+$size-multiplier: 3;
+$transform-time: 3s;
+$full-rotation: 360deg;
 
 .dark-blue {
     color: $dark-blue;
@@ -19,8 +23,12 @@ $light-blue: #00FFFF;
     color: $light-blue;
 }
 
+.purple {
+    color: $purple;
+}
+
 .image:hover {
-    transform: scale(3);
-    rotate: 360deg;
-    transition: transform 3s ease, rotate 3s ease;
+    transform: scale($size-multiplier);
+    rotate: $full-rotation;
+    transition: transform $transform-time ease, rotate $transform-time ease;
 }
